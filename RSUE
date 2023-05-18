@@ -1,0 +1,100 @@
+html
+
+<!DOCTYPE html>
+<html lang = "en">
+  <head>
+    <title>Школа "РИНХ" для подготовки к ЕГЭ</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="off/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="https://storage.myseldon.com/yugo/8B9007E9BD2E20A2B1CD0E6AA5777B03.png">
+    <title>Сайт РИНХА</title>
+  </head>
+  <body>
+    <img src="logo.jpg" width="150" height="100">
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <nav class="nav">
+            <a class="nav__link" href="#">Главная</a>
+            <a class="nav__link" href="#">Курсы</a>
+            <a class="nav__link" href="#">Преподаватели</a>
+            <a class="nav__link" href="#">О нас</a>
+            <a class="nav__link" href="#">Войти</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <hr>
+    <br>
+    <div class = "intro">
+        <div class="container">
+           <h1>Сайт поддержки</h1>
+        </div>
+    </div>
+  </body>
+</html>
+
+css
+
+body {
+    margin: 0;
+    background: #f5f5f5;
+    color: #222222;
+    font-size: 24px;
+    font-family: 'Lato', sans-serif;
+}
+
+*,
+*:before,
+*:after{
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4. h5, h6 {
+  margin: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1100;
+    margin:0 auto;
+}
+
+.intro {
+    width: 100%;
+    height: 100vh;
+}
+
+.header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav {
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.nav__link {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 15px;
+    color: black;
+    text-decoration: none;
+    transition: color 0.2s linear;
+}
+
+.nav__link:hover {
+  color: #2CA1FF;
+}
